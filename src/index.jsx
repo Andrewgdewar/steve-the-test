@@ -1,0 +1,17 @@
+import App from './App';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+
+import { AppProvider } from './Middleware/AuthContext';
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <BrowserRouter>
+    <AppProvider>
+      <App />
+    </AppProvider>
+  </BrowserRouter>,
+);
+
