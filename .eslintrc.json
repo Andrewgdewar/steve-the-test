@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "prettier"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react/jsx-curly-brace-presence": ["warn", { "props": "never", "children": "never" }],
+    "arrow-body-style": ["warn", "as-needed"],
+    "react/react-in-jsx-scope": "off",
+    "camelcase": "off",
+    "spaced-comment": "warn",
+    "quotes": ["warn", "single"],
+    "no-unused-vars": "warn",
+    "no-duplicate-imports": "warn",
+    "react/prop-types": "off",
+    "react/no-unknown-property": "off"
+  }
+}
